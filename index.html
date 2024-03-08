@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Framework and Libraries</title>
     <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Week9</h1>
+        <h1 class="my-element animate__animated">Week9</h1>
     </header>
     <main class="paper container-md">
         <p>
@@ -54,6 +66,12 @@
 
         </div>
     </main>
+
+    <!-- Paste script always at before the body end tag -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
