@@ -1,0 +1,7 @@
+:root{
+
+    /* These are necessary to change color */ 
+    --bs-primary:#8831fa;
+    --bs-primary-rgb: 136, 49, 250;
+    /* Hex would be first, and the rgb value */
+}
